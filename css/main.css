@@ -259,4 +259,151 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+.header-contact, .header__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.header-contact__link, .header__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.header-contact__link, .header__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo .logo__half {
+  color: rgb(0, 0, 0);
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 93px;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #212121;
+}
+.header__link--current {
+  position: relative;
+}
+.header__link--current::after {
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  content: " ";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+.header__link:hover, .header__link:focus {
+  color: #2196f3;
+}
+
+.header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #757575;
+}
+.header-contact__link:hover, .header-contact__link:focus {
+  color: #2196f3;
+}
+.header-contact__icone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.header-contact__item:not(:last-child) {
+  margin-right: 30px;
 }/*# sourceMappingURL=main.css.map */

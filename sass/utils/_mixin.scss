@@ -1,0 +1,13 @@
+// @mixin text-decor($font-weight, $letter-spacing, $font-size, $line-height) {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: $font-weight;
+//   letter-spacing: $letter-spacing;
+//   font-size: $font-size;
+//   line-height: $line-height;
+
+@mixin display-flex($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
