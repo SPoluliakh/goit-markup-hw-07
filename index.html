@@ -15,7 +15,7 @@
   <body>
     <!--Шапка-->
     <header class="header">
-      <div class="container container--flex">
+      <div class="container container--header">
         <nav class="header__nav ">
           <a class="logo logo--header " href="./index.html">Web<span class="logo__half">Studio</span></a>
           <ul class="header__list ">
@@ -355,7 +355,7 @@
     <!--Футер-->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container container--footer">
         <div class="footer__address">
           <a class="logo logo--footer" href="./index.html">Web<span class="logo__half logo__half--footer">Studio</span></a>
           <address class="address">
@@ -369,25 +369,25 @@
           <ul class="call__list">
             <li class="call__item">
               <a class="call__link" href=""
-                ><svg width="20px" height="20px">
+                ><svg class="social__icon social__icon--footer" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="call__item">
               <a class="call__link" href=""
-                ><svg width="20px" height="20px">
+                ><svg class="social__icon social__icon--footer" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="call__item">
               <a class="call__link" href=""
-                ><svg width="20px" height="20px">
+                ><svg class="social__icon social__icon--footer" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="call__item">
               <a class="call__link" href=""
-                ><svg width="20px" height="20px">
+                ><svg class="social__icon social__icon--footer" width="20px" height="20px">
                   <use href="./images/sprite.svg#icon-linkedin"></use></svg
               ></a>
             </li>
@@ -395,12 +395,12 @@
         </div>
 
         <form class="subscription" name="subscription">
-          <em class="act-title">Подпишитесь на рассылку</em>
+          <em class="subscription__title">Подпишитесь на рассылку</em>
           <label>
-            <input type="email" class="subscription-input" name="email" placeholder="E-mail" />
-            <button class="subscription-btn" type="submit">
+            <input type="email" class="subscription__input" name="email" placeholder="E-mail" />
+            <button class="subscription__btn" type="submit">
               Подписаться
-              <svg class="subscription-svg" width="24px" height="24px">
+              <svg class="subscription__icon" width="24px" height="24px">
                 <use href="./images/sprite.svg#icon-subscribtion"></use>
               </svg>
             </button>

@@ -4,12 +4,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-
   letter-spacing: 0.03em;
+
+  display: block;
 
   color: $footer-info-color;
 
   text-decoration: none;
+
+  @extend %transition-cocor;
 }
 .footer {
   padding-top: 60px;
@@ -19,6 +22,10 @@
 
 .container {
   @extend %container;
+
+  &--footer {
+    @include display-flex(space-between);
+  }
 }
 
 .logo--footer {
@@ -40,12 +47,131 @@
 
   &__mail {
     @extend %footer-mail-phone;
-    display: block;
+
     margin: 9px 0;
+
+    &:hover,
+    &:focus {
+      color: $hover-color;
+    }
   }
 
   &__phone {
     @extend %footer-mail-phone;
-    display: block;
+
+    &:hover,
+    &:focus {
+      color: $hover-color;
+    }
   }
+}
+
+.call {
+  align-self: flex-start;
+  padding-top: 12px;
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    display: block;
+    margin-bottom: 20px;
+
+    color: $accent-color;
+  }
+
+  &__list {
+    @extend %list;
+    @include display-flex(center);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    @include display-flex(center);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $accent-color;
+    background-color: $footer-socialLinks-color;
+
+    @extend %transition-bcg-color;
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+    }
+  }
+}
+
+.social__icon--footer {
+  fill: currentColor;
+}
+
+.subscription {
+  width: 570px;
+  align-self: flex-start;
+  padding-top: 12px;
+
+  &__title {
+    display: block;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $accent-color;
+
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $accent-color;
+
+    width: 351px;
+    padding: 15px 0 15px 16px;
+    background-color: $hiro-footer-bcg-color;
+
+    border: $footer-input-border;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    &::placeholder {
+      color: $footer-info-color;
+    }
+  }
+}
+
+.subscription__btn {
+  @include btn-geometry(10px, 28px);
+  align-items: center;
+  margin-left: 12px;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
+}
+
+.subscription__icon {
+  fill: currentColor;
+  margin-left: 10px;
 }

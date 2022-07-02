@@ -12,7 +12,7 @@
 }
 .container {
   @extend %container;
-  &--flex {
+  &--header {
     @include display-flex(space-between);
   }
 }

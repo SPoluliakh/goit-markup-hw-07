@@ -15,17 +15,20 @@
 @mixin btn-geometry($height, $width) {
   padding: $height $width;
   min-width: 200px;
-  border-radius: 4px;
 
-  display: inline-block;
+  display: inline-flex;
   color: $accent-color;
   background-color: $btn-bcg-color;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+
+  box-shadow: $btn-shadow;
+  border-radius: 4px;
+  border-width: 1px;
 
   cursor: pointer;
   border-color: transparent;
