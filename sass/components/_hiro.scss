@@ -33,7 +33,7 @@
 }
 
 .hiro-section__button {
-  @include btn-geometry(10px, 32px);
+  @include button(10px, 32px);
 
   &:hover,
   &:focus {

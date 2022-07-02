@@ -161,7 +161,7 @@
 }
 
 .subscription__btn {
-  @include btn-geometry(10px, 28px);
+  @include button(10px, 28px);
   align-items: center;
   margin-left: 12px;
 

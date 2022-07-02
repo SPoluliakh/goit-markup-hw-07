@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-@mixin btn-geometry($height, $width) {
+@mixin button($height, $width) {
   padding: $height $width;
   min-width: 200px;
 
