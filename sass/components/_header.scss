@@ -24,8 +24,12 @@
 .logo {
   @extend %logo-text-decor;
 
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: block;
+
+  &--header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
   &__half {
     color: $logo-header-color;
@@ -81,6 +85,8 @@
     @include display-flex(center);
     @extend %header-text-decor;
     @extend %link;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: $header-info-color;
     @extend %transition-cocor;
     &:hover,

@@ -42,7 +42,7 @@
     color: $clients-logo-color;
 
     @extend %transition-cocor;
-    @extend %border-color;
+    @extend %transition-border-color;
 
     &:hover,
     &:focus {

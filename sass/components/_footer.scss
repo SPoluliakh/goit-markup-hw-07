@@ -1,0 +1,51 @@
+%footer-mail-phone {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: $footer-info-color;
+
+  text-decoration: none;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $hiro-footer-bcg-color;
+}
+
+.container {
+  @extend %container;
+}
+
+.logo--footer {
+  margin-bottom: 20px;
+}
+
+.logo__half--footer {
+  color: $accent-color;
+}
+
+.address {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+
+  &__mail {
+    @extend %footer-mail-phone;
+    display: block;
+    margin: 9px 0;
+  }
+
+  &__phone {
+    @extend %footer-mail-phone;
+    display: block;
+  }
+}
