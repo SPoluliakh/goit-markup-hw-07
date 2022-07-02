@@ -1,0 +1,105 @@
+.ourteam-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $team-section-bcg-color;
+}
+
+.container {
+  @extend %container;
+}
+
+.ourteam-section__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+  text-align: center;
+  color: $title-color;
+}
+
+.team-list {
+  @extend %list;
+  @include display-flex(centre);
+
+  flex-wrap: wrap;
+  margin-right: -30px;
+
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+
+    box-shadow: $ourteam-cards-shadow;
+    border-radius: 0px 0px 4px 4px;
+    background: $accent-color;
+  }
+
+  &__person {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    text-align: center;
+  }
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+
+    color: $title-color;
+
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    margin-bottom: 16px;
+  }
+}
+
+.social {
+  @extend %list;
+  @include display-flex(center);
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    @include display-flex(center);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    @extend %transition-cocor;
+    @extend %transition-bcg-color;
+
+    color: $team-socialLinks-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      background-color: $hover-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

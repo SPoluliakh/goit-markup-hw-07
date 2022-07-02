@@ -1,6 +1,5 @@
 .advantage-section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .container {
@@ -14,43 +13,44 @@
 .advantage-list {
   @extend %list;
   @include display-flex(center);
+  flex-wrap: wrap;
   margin-right: -30px;
-}
 
-.advantage-list__icon {
-  @include display-flex(center);
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-color: $advantage-svg-color;
-}
+  &__icon {
+    @include display-flex(center);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $advantage-svg-color;
+  }
 
-.advantage-list__title {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  color: $title-color;
-}
+    color: $title-color;
+  }
 
-.advantage-list__text {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
 
-  letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 
-  color: $text-color;
-}
+    color: $text-color;
+  }
 
-.advantage-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+  }
 }
