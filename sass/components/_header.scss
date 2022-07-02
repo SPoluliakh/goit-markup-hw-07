@@ -14,10 +14,11 @@
 
 .logo {
   @extend %logo-text-decor;
+
   padding-top: 24px;
   padding-bottom: 25px;
 
-  .logo__half {
+  &__half {
     color: $logo-header-color;
   }
 }
@@ -39,7 +40,7 @@
   padding-bottom: 32px;
   @extend %link;
   color: $nav-color;
-
+  @extend %transition-cocor;
   &--current {
     position: relative;
 
@@ -72,7 +73,7 @@
     @extend %header-text-decor;
     @extend %link;
     color: $header-info-color;
-
+    @extend %transition-cocor;
     &:hover,
     &:focus {
       color: $hover-color;

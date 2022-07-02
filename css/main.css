@@ -261,6 +261,16 @@ summary {
   display: list-item;
 }
 
+h1,
+h2,
+h2,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 .header-contact, .header__list {
   list-style: none;
   padding-left: 0;
@@ -298,6 +308,11 @@ summary {
   letter-spacing: 0.02em;
 }
 
+.header-contact__link, .header__link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -330,7 +345,7 @@ summary {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.logo .logo__half {
+.logo__half {
   color: rgb(0, 0, 0);
 }
 
