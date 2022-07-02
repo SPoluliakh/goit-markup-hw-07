@@ -11,3 +11,24 @@
   justify-content: $justify-content;
   align-items: center;
 }
+
+@mixin btn-geometry($height, $width) {
+  padding: $height $width;
+  min-width: 200px;
+  border-radius: 4px;
+
+  display: inline-block;
+  color: $accent-color;
+  background-color: $btn-bcg-color;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border-color: transparent;
+
+  @extend %transition-bcg-color;
+}

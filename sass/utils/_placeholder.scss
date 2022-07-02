@@ -8,6 +8,20 @@ p {
   margin-top: 0;
 }
 
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 %list {
   list-style: none;
   padding-left: 0;
@@ -31,7 +45,7 @@ p {
 }
 
 %logo-text-decor {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -42,7 +56,7 @@ p {
 }
 
 %header-text-decor {
-  font-family: 'Roboto';
+  font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -52,4 +66,8 @@ p {
 
 %transition-cocor {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-bcg-color {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
