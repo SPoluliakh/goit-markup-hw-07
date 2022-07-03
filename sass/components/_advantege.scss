@@ -2,10 +2,6 @@
   padding-top: 94px;
 }
 
-.container {
-  @extend %container;
-}
-
 .advantage-section__title {
   @extend %visually-hidden;
 }

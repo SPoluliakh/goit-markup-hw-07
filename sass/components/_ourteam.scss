@@ -4,10 +4,6 @@
   background-color: $team-section-bcg-color;
 }
 
-.container {
-  @extend %container;
-}
-
 .ourteam-section__title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -87,8 +83,8 @@
     height: 44px;
     border-radius: 50%;
 
-    @extend %transition-cocor;
-    @extend %transition-bcg-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     color: $team-socialLinks-color;
 

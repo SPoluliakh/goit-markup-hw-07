@@ -277,21 +277,35 @@ img {
   height: auto;
 }
 
-.call__list, .header-contact, .header__list {
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.portfolio-section__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.project-list, .portfolio-section__nav, .call__list, .header-contact, .header__list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.header-contact__link, .header__link {
+.project-list__link, .header-contact__link, .header__link {
   text-decoration: none;
   color: inherit;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .logo {
@@ -303,16 +317,6 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #2196f3;
-}
-
-.address__phone, .address__mail, .header-contact__link, .header__link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscription__btn, .call__link {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact__link, .header__link {
@@ -384,7 +388,13 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header__link:hover, .header__link:focus {
+  color: #2196f3;
+}
+
 .header__link--current {
   position: relative;
 }
@@ -397,9 +407,6 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-}
-.header__link:hover, .header__link:focus {
-  color: #2196f3;
 }
 
 .header-contact {
@@ -426,6 +433,8 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact__link:hover, .header-contact__link:focus {
   color: #2196f3;
@@ -449,6 +458,8 @@ img {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -488,9 +499,15 @@ img {
 }
 .address__mail {
   margin: 9px 0;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address__mail:hover, .address__mail:focus {
   color: #2196f3;
+}
+.address__phone {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address__phone:hover, .address__phone:focus {
   color: #2196f3;
@@ -542,6 +559,8 @@ img {
   border-radius: 50%;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .call__link:hover, .call__link:focus {
   background-color: #2196f3;
@@ -621,6 +640,8 @@ img {
   border-width: 1px;
   cursor: pointer;
   border-color: transparent;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -633,4 +654,141 @@ img {
 .subscription__icon {
   fill: currentColor;
   margin-left: 10px;
+}
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-section__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-section__nav-list:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-section__btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-section__btn:hover, .portfolio-section__btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.project-list__item {
+  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+      flex-basis: calc(33.3333333333% - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list__item:hover, .project-list__itemfocus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-list__titles {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.project-list__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.project-list_subtitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.project-list__info {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-list__text {
+  position: absolute;
+  top: 100%;
+  padding: 63px 24px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list__link:hover .project-list__text {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }/*# sourceMappingURL=portfolio.css.map */
