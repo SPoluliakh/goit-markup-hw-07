@@ -15,15 +15,15 @@
   @extend %list;
   @include display-flex(center);
   margin-right: -30px;
+}
 
-  &__item {
-    flex-basis: calc(100% / 6 - 30px);
-    margin-right: 30px;
-  }
+.clients-list__item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-right: 30px;
+}
 
-  &__logo {
-    fill: currentColor;
-  }
+.clients-list__logo {
+  fill: currentColor;
 }
 
 .clients-list__link {

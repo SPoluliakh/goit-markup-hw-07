@@ -767,11 +767,13 @@ img {
           align-items: center;
   margin-right: -30px;
 }
+
 .clients-list__item {
   -ms-flex-preferred-size: calc(16.6666666667% - 30px);
       flex-basis: calc(16.6666666667% - 30px);
   margin-right: 30px;
 }
+
 .clients-list__logo {
   fill: currentColor;
 }
