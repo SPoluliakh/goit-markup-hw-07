@@ -19,13 +19,11 @@
   background-color: $hiro-footer-bcg-color;
 }
 
-.container {
-  &--footer {
-    @include display-flex(space-between);
-  }
+.footer__container {
+  @include display-flex(space-between);
 }
 
-.logo--footer {
+.footer__logo {
   margin-bottom: 20px;
 }
 
@@ -35,25 +33,25 @@
 
 .address {
   @include text-decor(400, 14px, 1.7, 0.03em, $accent-color);
+}
 
-  &__mail {
-    @extend %footer-mail-phone;
+.address__mail {
+  @extend %footer-mail-phone;
 
-    margin: 9px 0;
+  margin: 9px 0;
 
-    &:hover,
-    &:focus {
-      color: $hover-color;
-    }
+  &:hover,
+  &:focus {
+    color: $hover-color;
   }
+}
 
-  &__phone {
-    @extend %footer-mail-phone;
+.address__phone {
+  @extend %footer-mail-phone;
 
-    &:hover,
-    &:focus {
-      color: $hover-color;
-    }
+  &:hover,
+  &:focus {
+    color: $hover-color;
   }
 }
 
@@ -61,74 +59,64 @@
   align-self: flex-start;
   padding-top: 12px;
 
-  &__title {
-    @include text-decor(700, 14px, 1.14, 0.03em, $accent-color);
-
-    text-transform: uppercase;
-
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  &__list {
-    @extend %list;
-    @include display-flex(center);
-  }
-
   &__item {
     &:not(:last-child) {
       margin-right: 10px;
     }
   }
+}
 
-  &__link {
-    @include display-flex(center);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: $accent-color;
-    background-color: $footer-socialLinks-color;
+.call__title {
+  @include text-decor(700, 14px, 1.14, 0.03em, $accent-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      background-color: $hover-color;
-    }
+  text-transform: uppercase;
+
+  display: block;
+  margin-bottom: 20px;
+}
+
+.call__list {
+  @extend %list;
+  @include display-flex(center);
+}
+
+.call__link {
+  @include display-flex(center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $accent-color;
+  background-color: $footer-socialLinks-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
   }
 }
 
-.social__icon--footer {
+.call__icon {
   fill: currentColor;
+}
+
+.call__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .subscription {
   width: 570px;
   align-self: flex-start;
   padding-top: 12px;
+}
 
-  &__title {
-    @include text-decor(700, 14px, 1.14, 0.03em, $accent-color);
+.subscription__title {
+  @include text-decor(700, 14px, 1.14, 0.03em, $accent-color);
 
-    display: block;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-
-  &__input {
-    @include text-decor(400, 16px, 1.25, 0.03em, $accent-color);
-
-    width: 351px;
-    padding: 15px 0 15px 16px;
-    background-color: $hiro-footer-bcg-color;
-
-    border: $footer-input-border;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-
-    &::placeholder {
-      color: $footer-info-color;
-    }
-  }
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .subscription__btn {
@@ -139,6 +127,22 @@
   &:hover,
   &:focus {
     background-color: $btn-hover-color;
+  }
+}
+
+.subscription__input {
+  @include text-decor(400, 16px, 1.25, 0.03em, $accent-color);
+
+  width: 351px;
+  padding: 15px 0 15px 16px;
+  background-color: $hiro-footer-bcg-color;
+
+  border: $footer-input-border;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $footer-info-color;
   }
 }
 

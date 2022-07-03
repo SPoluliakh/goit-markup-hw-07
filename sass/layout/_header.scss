@@ -10,10 +10,9 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.container {
-  &--header {
-    @include display-flex(space-between);
-  }
+
+.header__container {
+  @include display-flex(space-between);
 }
 
 .header__nav {
