@@ -4,17 +4,9 @@
 }
 
 .examples-section__title {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include text-decor(700, 36px, 1.17, 0.03em, $title-color);
   text-align: center;
-  letter-spacing: 0.03em;
-
   margin-bottom: 50px;
-
-  color: $title-color;
 }
 
 .examples-list {
@@ -33,15 +25,9 @@
     padding-top: 27px;
     padding-bottom: 27px;
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @include text-decor(700, 14px, 1.14, 0.03em, $accent-color);
 
-    color: $accent-color;
+    text-transform: uppercase;
     background-color: $examples-titel-bcg-color;
   }
 }

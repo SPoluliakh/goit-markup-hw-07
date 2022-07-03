@@ -4,16 +4,9 @@
 }
 
 .clients-section__title {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include text-decor(700, 36px, 1.17, 0.03em, $title-color);
 
   text-align: center;
-
-  color: $title-color;
 
   margin-bottom: 50px;
 }

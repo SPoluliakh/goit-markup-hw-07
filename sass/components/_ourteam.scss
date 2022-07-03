@@ -5,16 +5,10 @@
 }
 
 .ourteam-section__title {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include text-decor(700, 36px, 1.17, 0.03em, $title-color);
 
   margin-bottom: 50px;
   text-align: center;
-  color: $title-color;
 }
 
 .team-list {
@@ -40,32 +34,17 @@
     text-align: center;
   }
   &__title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include text-decor(500, 16px, 1.19, 0.03em, $title-color);
 
     text-align: center;
-
-    color: $title-color;
 
     margin-bottom: 10px;
   }
 
   &__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include text-decor(400, 16px, 1.19, 0.03em, $text-color);
 
     text-align: center;
-    letter-spacing: 0.03em;
-    color: $text-color;
-    margin-bottom: 16px;
   }
 }
 
