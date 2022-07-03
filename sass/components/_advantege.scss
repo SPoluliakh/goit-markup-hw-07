@@ -12,41 +12,28 @@
   flex-wrap: wrap;
   margin-right: -30px;
 
-  &__icon {
-    @include display-flex(center);
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    background-color: $advantage-svg-color;
-  }
-
   &__title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @include text-decor(700, 14px, 1.14, 0.03em, $title-color);
 
-    color: $title-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
 
   &__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-
-    letter-spacing: 0.03em;
-
-    color: $text-color;
+    @include text-decor(400, 14px, 1.7, 0.03em, $text-color);
   }
 
   &__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
   }
+}
+
+.advantage-list__icon {
+  @include display-flex(center);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $advantage-svg-color;
 }

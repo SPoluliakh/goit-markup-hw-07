@@ -38,11 +38,6 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// @mixin transition1($type) {
-//   transition: $type 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// @mixin transition($type, $typ, $ty) {
-//   transition: $type 2500ms cubic-bezier(0.4, 0, 0.2, 1), $typ 2500ms cubic-bezier(0.4, 0, 0.2, 1),
-//     $ty 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+@mixin transition($type) {
+  transition: $type 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
