@@ -45,6 +45,7 @@
 
 .team-list__text {
   @include text-decor(400, 16px, 1.19, 0.03em, $text-color);
+  margin-bottom: 16px;
 
   text-align: center;
 }
